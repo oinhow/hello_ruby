@@ -5,11 +5,15 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
+<%= render 'layouts/header' %>
 <body>
-	<%= link_to "主页", root_path %>
-	<%= link_to "关于", about_path %> 
-<%= yield %>
+	
+	<div class="container">
+		<%= yield %>
+    </div>
 
 </body>
 </html>
