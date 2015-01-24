@@ -1,8 +1,17 @@
-$navbar-inverse-bg: #f1c40f;
-$navbar-inverse-link-color: white;
-
-
-
-
+$body-bg:#ecf0f1;
+//$font-family-sans-serif:'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height:45px;
+$navbar-default-bg:white;
+$navbar-default-brand-color:#f0ad4e;
+$brand-primary:#c0392b;
+$jumbotron-bg:white;
 
 @import 'bootstrap';
+
+.center {
+     text-align: center;
+}
+
+.navbar-brand {
+     font-weight: bold;
+}
