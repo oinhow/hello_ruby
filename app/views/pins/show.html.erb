@@ -1,0 +1,9 @@
+<p id="信息"><%= notice %></p>
+
+<p>
+  <strong>描述:</strong>
+  <%= @pin.description %>
+</p>
+
+<%= link_to '编辑', edit_pin_path(@pin) %> |
+<%= link_to '返回', pins_path %>
