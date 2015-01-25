@@ -5,5 +5,7 @@
   <%= @pin.description %>
 </p>
 
-<%= link_to '编辑', edit_pin_path(@pin) %> |
+<% if @pin.user == current_user %>
+  <%= link_to '编辑', edit_pin_path(@pin) %>
+<% end %>
 <%= link_to '返回', pins_path %>
